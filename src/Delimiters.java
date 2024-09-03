@@ -16,6 +16,7 @@ public class Delimiters {
         return openDel;
     }
 
+    //transfer all delimiters into a list
     public ArrayList<String> getDelimitersList(String[] token)
     {
 
@@ -30,6 +31,7 @@ public class Delimiters {
         return delimiters;
     }
 
+    //delimiters are balanced if there are never more closed delimiters than open ones at any certain point and if the total number of closed and open delimiters is equal
     public boolean isBalanced(ArrayList<String> delimiters)
     {
         int openDelCount = 0;
